@@ -1,0 +1,81 @@
+.body{
+    background-color: #302C42;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.span{
+    color: #C0B7E8 ;
+}
+
+.animated-button {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+  }
+  
+  /* Hover effect */
+  .animated-button:hover {
+  
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+       
+  }
+  .animated-button:active {
+    transform: scale(0.95);
+  }
+
+
+
+  /* arrow */
+  .arrow{
+    animation: moveHorizontal 4s linear infinite;
+  }
+  @keyframes moveHorizontal{
+    0% {
+      transform: translateX(0); 
+    }
+    100% {
+      transform: translateX(60px); 
+    }
+  }
+
+  .para{
+    font-size:x-small;
+  }
+
+  .small-hr {
+    height: 1px; 
+    background-color: #000; 
+    width: 50%; 
+    margin: 10px 0; 
+  }
+  
+
+  /* img rotating */
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100px !important; */
+    height: 100vh;
+  }
+  
+  /* Image animation */
+  .rotating-image {
+    width: 50px; 
+    animation: rotate 4s linear infinite; 
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
